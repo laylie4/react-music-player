@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header";
+import Songs from "./components/Songs";
+import Video from "./components/Video";
+import Play from "./components/Play";
 
-function App() {
+const App = () => {
+  const [songs, setSongs] = useState([
+    {
+      title: "1. Never Gonna Give You Up",
+      artist: "Rick Astley",
+    },
+
+    {
+      title: "2. You Got A Friend In Me",
+      artist: "Randy Newman",
+    },
+
+    {
+      title: "3. Baby Shark",
+      artist: "Pinkfong",
+    },
+    {
+      title: "4. Star Spangled Banner",
+      artist: "Francis Scott Key",
+    },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      <Songs songs={songs} />
+      <Video />
+      <Play />
     </div>
   );
-}
-
+};
 export default App;
