@@ -4,6 +4,7 @@ import Songs from "./components/Songs";
 import Video from "./components/Video";
 import Play from "./components/Play";
 
+
 const App = () => {
   const [songs, setSongs] = useState([
     {
@@ -16,7 +17,7 @@ const App = () => {
       artist: "Randy Newman",
     },
 
-    {
+    { 
       title: "3. Baby Shark",
       artist: "Pinkfong",
     },

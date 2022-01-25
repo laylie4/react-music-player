@@ -9,8 +9,9 @@
 
 body {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;;
+  font-size: 20px;
   overflow: hidden;
+  
 }
 
 .container {
@@ -20,7 +21,9 @@ body {
   min-height: 300px;
   border: 10px solid rgba(172, 189, 188, 0.7);
   padding: 80px;
+  background-color: rgba(172, 189, 188, 0.7);
 }
+
 
 .header {
   display: flex;
@@ -114,4 +117,5 @@ footer {
   text-align: center;
 }
 
-/* change font on button */
+
+
