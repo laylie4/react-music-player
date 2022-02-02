@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+/*import PropTypes from "prop-types";
 
 const Button = ({ color, text }) => {
   return (
@@ -21,3 +21,4 @@ Button.propTypes = {
 };
 
 export default Button;
+*/
